@@ -1,0 +1,297 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #414141;
+	border-color: #414141;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+@font-face {
+	font-family: axis;
+	src: url('font/axis.otf');
+}
+
+/* navigation */
+
+nav {
+  width: 100%;
+  position: fixed;
+
+
+}
+.menu-button {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+	background-color: transparent;
+	transition: all 300ms ease;
+
+
+}
+
+
+
+.menu li {
+  list-style: none;
+
+
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+	margin: 5px;
+	color: white;
+
+
+}
+
+.scrolled {
+	background-color: white;
+	box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	transition: all 300ms ease;
+}
+
+.scrolled li a {
+	color: #414141;
+}
+
+/* End navigation */
+
+
+.full-viewport {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.full-width {
+	width: 100%;
+}
+
+
+
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-landing {
+
+  background: url('Images/the malt photos/DSC_0137.JPG') no-repeat center center;
+	background-size: cover;
+
+
+
+}
+
+
+.home-landing > h1 {
+	color: white;
+	font-size: 5em;
+
+}
+
+
+.home-info {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+
+.half {
+	width: 50%;
+}
+
+.third {
+	width: 30%;
+}
+
+.equal {
+	flex: 1;
+
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+
+.logo {
+	width: 500px;
+	max-width: 75%;
+}
+
+.container {
+	width: 1080px;
+	max-width: 98%;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.home-services-container {
+	background-color: #414141;
+
+
+}
+
+.home-services {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 0 40px;
+
+}
+
+.service-item {
+	background-color: white;
+	display: block;
+
+
+}
+
+
+.title {
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px 0;
+	margin: 30px 0;
+	display: block;
+}
+
+.btn {
+	border-style: solid;
+	border-width: 2px;
+	text-decoration: none;
+	padding: 10px;
+
+}
+
+.white {
+	border-color: white;
+	color: white;
+}
+
+
+
+
+
+.border-top-bottom {
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #414141;
+}
+
+
+.t-l {text-align: left;}
+.t-c {text-align: center;;}
+.t-r {text-align: right;}
+
+.m-10 {	margin: 10px;}
+.m-20 {	margin: 20px;}
+.m-30 {	margin: 30px;}
+.m-40 {	margin: 40px;}
+.m-50 {	margin: 50px;}
+
+@media screen and (max-width: 480px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+		background-color: white;
+		box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+
+  .menu-button {
+    display: block;
+    padding: 10px;
+    margin: 10px 5px 10px auto;
+    border: 1px solid;
+		border-color: #414141;
+    color: #414141;;
+
+  }
+
+  .menu-button:hover {
+    color: white;
+    background-color: #343436;
+	}
+
+  .menu-wrapper {
+    display: none;
+
+  }
+  .menu {
+    text-align: center;
+    flex-direction: column;
+    box-shadow: inset 0px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+.menu li {
+
+}
+
+.menu li:first-child{
+    border-top: 0;
+  }
+
+	.menu li a {
+    background-color: #343436;
+    border-bottom: 0;
+		border-top: 1px solid white;
+		padding: 25px;
+		margin: 0;
+		color: white;
+  }
+
+.menu li a:hover {
+    background-color: #95a5a6;
+    border-bottom: 0;
+  }
+
+.item {
+    flex-basis: 90%;
+  }
+
+
+	.service-item {
+		background-color: white;
+		display: block;
+		flex: 1 0 300px;
+		margin: 10px;
+
+
+	}
+
+.half {
+	width: 100%
+}
+
+
+
+
+}
+/*end mobile layout */
