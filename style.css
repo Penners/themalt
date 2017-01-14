@@ -98,6 +98,12 @@ nav {
 	align-items: center;
 }
 
+.center-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 .home-landing {
 
   background: url('Images/the malt photos/DSC_0137.JPG') no-repeat center center;
@@ -141,8 +147,9 @@ nav {
 
 
 .logo {
-	width: 500px;
+	width: 300px;
 	max-width: 75%;
+	
 }
 
 .container {
