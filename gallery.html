@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://use.fontawesome.com/136e5dc0b4.js"></script>
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
   <link rel="icon" href="Images\THE MALT LOGOS\2.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Malt</title>
 </head>
 <body>
   <nav>
-    <div class="menu-button">Menu</div>
+    <div class="menu-header">
+      <div class="menu-header-item"><i class="fa fa-2x fa-fw fa-instagram"></i></div>
+      <div class="menu-header-item"><i class="fa fa-2x fa-fw fa-facebook-official"></i></div>
+      <div class="menu-header-item"><div class="menu-button"><i id="menu-icon" class="fa fa-2x fa-fw fa-bars"></i></div></div>
+    </div>
     <div class="menu-wrapper">
       <ul id="menu" class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Media</a></li>
+        <li><a href="gallery.html">Media</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
-
+<div id="instafeed" class="gallery full-width">
+</div>
 
 
 
 <footer>
 
 </footer>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="js/main.js">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script>
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 4484836633, // Ex: 1374300081
+    accessToken: '4484836633.e660a5d.5e39119d7e9148b691fb3a4485ec6010',
+    resolution: 'standard_resolution',
+    template: '<a class="gallery-item" href="{{link}}"><img src="{{image}}" /></a>'
+  });
+  feed.run();
 </script>
 </body>
 </html>
