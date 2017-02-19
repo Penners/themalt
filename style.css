@@ -9,6 +9,8 @@
 
 }
 
+
+
  img {
   width: 100%;
   display: block;
@@ -37,9 +39,6 @@ nav {
   justify-content: flex-end;
 	background-color: transparent;
 	transition: all 300ms ease;
-
-
-
 }
 
 
@@ -91,11 +90,9 @@ nav {
 }
 
 
+.bg-dark {		background-color: #414141;	}
 
-
-.overlay {
-	background-color: rgba(0, 0, 0, 0.1);
-}
+.overlay {	background-color: rgba(0, 0, 0, 0.1);	}
 
 .center {
 	display: flex;
@@ -110,19 +107,14 @@ nav {
 }
 
 .home-landing {
-
   background: url('Images/the malt photos/DSC_0137.JPG') no-repeat center center;
 	background-size: cover;
-
-
-
 }
 
 
 .home-landing > h1 {
 	color: white;
 	font-size: 5em;
-
 }
 
 
@@ -130,7 +122,6 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-
 }
 
 .half {
@@ -219,6 +210,8 @@ nav {
 }
 
 
+.menu-spacer {	padding-top: 90px; }
+
 .t-l {text-align: left;}
 .t-c {text-align: center;;}
 .t-r {text-align: right;}
@@ -266,9 +259,19 @@ nav {
 
 /* End gallery layout */
 
+
+
+/* Services Layout */
+
+
+
+/* End services layout */
+
 /* Mobile layout */
 
 @media screen and (max-width: 480px) {
+
+	.menu-spacer {	padding-top: 70px; }
 
   nav {
     display: flex;
